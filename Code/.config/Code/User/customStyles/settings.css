@@ -1,0 +1,380 @@
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab
+  .tab-label {
+  line-height: 32px !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab {
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding-right: none !important;
+  border-right: none !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content:not(.dragged-over)
+  .editor-group-container.active
+  > .title
+  .tabs-container
+  > .tab.sizing-shrink:not(.dragged):not(.sticky-compact)
+  > .tab-label
+  > .monaco-icon-label-container::after,
+.monaco-workbench
+  .part.editor
+  > .content:not(.dragged-over)
+  .editor-group-container.active
+  > .title
+  .tabs-container
+  > .tab.sizing-fixed:not(.dragged):not(.sticky-compact)
+  > .tab-label
+  > .monaco-icon-label-container::after {
+  background: none !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.active {
+  background-color: #242629 !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.active.tab-border-top
+  > .tab-border-top-container,
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.selected.tab-border-top
+  > .tab-border-top-container {
+  height: 0;
+}
+
+.breadcrumbs-below-tabs {
+  border-radius: 0.5rem 0.5rem 0 0;
+  overflow: hidden;
+}
+
+.monaco-breadcrumbs {
+  font-size: 0.7rem;
+}
+
+.monaco-editor .sticky-widget {
+  box-shadow: none;
+}
+
+.monaco-editor .scroll-decoration {
+  box-shadow: none;
+}
+
+.monaco-editor .sticky-widget {
+  border-color: #2b2d30;
+}
+
+.results > .monaco-list > .monaco-scrollable-element,
+.results > .monaco-list > .monaco-scrollable-element > .monaco-list-rows {
+  border-radius: 0.5rem !important;
+}
+
+.monaco-list > .monaco-scrollable-element {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.extensions-viewlet > .extensions .message-container {
+  padding: unset !important;
+}
+
+.editor-group-container,
+.monaco-workbench .part.editor > .content .editor-group-container .active,
+.monaco-workbench .part.editor > .content .editor-group-container {
+  margin: 2px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.split-view-view.visible,
+.split-view-container {
+  background: #2b2d30;
+}
+
+.part.panel.basepanel.bottom.pane-composite-part {
+  margin-top: 0.25rem !important;
+  border-radius: 0.5rem !important;
+}
+
+.monaco-split-view2.separator-border.vertical
+  > .monaco-scrollable-element
+  > .split-view-container
+  > .split-view-view:not(:first-child):before {
+  background: #2b2d30 !important;
+}
+
+.monaco-split-view2.separator-border
+  > .monaco-scrollable-element
+  > .split-view-container
+  > .split-view-view:not(:first-child):before {
+  background: #2b2d30 !important;
+}
+
+.monaco-workbench
+  .part.titlebar
+  > .titlebar-container
+  > .titlebar-center
+  > .window-title
+  > .command-center
+  .action-item.command-center-center {
+  border-radius: 5rem;
+  border: none;
+}
+
+.titlebar-center,
+.titlebar-right {
+  transition: all 0.15s;
+}
+
+.titlebar-center:hover,
+.titlebar-right:hover {
+  opacity: 1;
+  pointer-events: all;
+}
+
+li.action-item.icon.checked,
+li.action-item.icon:hover {
+  opacity: 1;
+  border-radius: 0.5rem;
+  background-color: #404245;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .badge
+  .badge-content {
+  z-index: 99 !important;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-item.checked
+  .active-item-indicator:before {
+  border-left: none !important;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-label.codicon {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-label:not(.codicon) {
+  padding: unset !important;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-label {
+  width: 44px !important;
+  height: 44px !important;
+}
+
+.monaco-workbench .monaco-list-rows {
+  border-radius: 0 0 0.5rem 0.5rem;
+  width: 97% !important;
+  padding-bottom: 0.5rem;
+}
+
+li.action-item.icon {
+  transition: all 0.15s;
+  opacity: 0.2;
+  margin-left: 0.3rem;
+  padding-left: 0.05rem;
+  margin-top: 0.2rem;
+}
+
+.monaco-pane-view .pane > .pane-header {
+  margin: 2px 2px 2px 0;
+}
+
+.monaco-workbench .part.sidebar > .title {
+  background: transparent;
+  padding: 0;
+  border-radius: 0.5rem;
+}
+
+.monaco-workbench .part.auxiliarybar {
+  margin: 2px 2px 2px 0;
+}
+
+.monaco-workbench .part.sidebar {
+  margin: 2px 0 2px 2px;
+  border-radius: 0.5rem;
+  border-right: unset !important;
+}
+
+.monaco-workbench
+  .pane-composite-part
+  > .header-or-footer
+  > .composite-bar-container
+  > .composite-bar
+  > .monaco-action-bar
+  .action-item.checked
+  .active-item-indicator:before,
+.monaco-workbench
+  .pane-composite-part
+  > .header-or-footer
+  > .composite-bar-container
+  > .composite-bar
+  > .monaco-action-bar
+  .action-item:focus
+  .active-item-indicator:before,
+.monaco-workbench
+  .pane-composite-part
+  > .title
+  > .composite-bar-container
+  > .composite-bar
+  > .monaco-action-bar
+  .action-item.checked
+  .active-item-indicator:before,
+.monaco-workbench
+  .pane-composite-part
+  > .title
+  > .composite-bar-container
+  > .composite-bar
+  > .monaco-action-bar
+  .action-item:focus
+  .active-item-indicator:before {
+  border-top-width: 1px;
+}
+
+.terminal-wrapper.active {
+  background: #1e1f22;
+}
+
+div#terminal {
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.monaco-workbench .pane-body.integrated-terminal .terminal-split-pane {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.quick-input-widget {
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+  z-index: 100;
+  border: solid 2px #ffffff2d !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  font-size: 24px !important;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.45) !important;
+}
+
+.quick-input-widget .monaco-list-rows {
+  font-size: 13px !important;
+}
+
+/* Remove background for lists */
+.quick-input-widget .monaco-list-rows {
+  background: transparent !important;
+}
+
+/* List hover */
+.quick-input-widget .monaco-list-row:hover {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Command palette text input */
+.quick-input-filter .monaco-inputbox {
+  border-radius: 12px !important;
+  padding: 12px !important;
+  border: none !important;
+  background-color: rgba(34, 34, 34, 0.4) !important;
+  font-size: 20px !important;
+  margin-bottom: 16px !important;
+}
+
+/* Command palette's input box placeholder. */
+.monaco-inputbox input::placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container {
+  margin: 0.5rem;
+}
+
+.monaco-icon-label:after {
+  font-size: 70% !important;
+  margin: 1px 16px 0 5px !important;
+}
+
+.monaco-findInput {
+  border-radius: 0.5rem !important;
+}
+
+.monaco-editor .find-widget {
+  top: 12px !important;
+  border-radius: 0.5rem !important;
+}
+
+.monaco-workbench .part.auxiliarybar > .title {
+  background-color: unset !important;
+}
+.monaco-workbench .part.auxiliarybar {
+  border-radius: 0.5rem !important;
+  margin-left: 0.35rem !important;
+}

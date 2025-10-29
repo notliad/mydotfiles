@@ -1,0 +1,88 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Print to console": {
+		"scope": "javascript,typescript",
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"UseEffect with cleanup": {
+		"scope": "javascript,typescript",
+		"prefix": "usef",
+		"body": [
+			"useEffect(() => {",
+			"  // Your effect logic here",
+			"  return () => {",
+			"    // Cleanup logic here",
+			"  };",
+			"}, [$1]);"
+		],
+		"description": "React useEffect hook with cleanup function"
+	},
+	"try": {
+		"scope": "javascript,typescript",
+		"prefix": "try",
+		"body": [
+			"try {",
+			"  $1",
+			"} catch (error) {",
+			"  console.error('Error:', error);",
+			"}"
+		],
+		"description": "Try-catch block for error handling"
+	},
+	"Basic React Component": {
+		"scope": "javascript,typescript",
+		"prefix": "rcc",
+		"body": [
+			"import React from 'react';",
+			"",
+			"const $1 = () => {",
+			"  return (",
+			"    <div>",
+			"      $2",
+			"    </div>",
+			"  );",
+			"};",
+			"",
+			"export default $1;"
+		],
+		"description": "Basic React functional component"
+	},
+	"Javascript Map function": {
+		"scope": "javascript,typescript",
+		"prefix": "map",
+		"body": [
+			"const result = $1.map(($3) => {",
+			"  return $4;",
+			"});",
+		],
+		"description": "JavaScript Array map function"
+	},
+	"React state hook": {
+		"scope": "javascript,typescript",
+		"prefix": "uses",
+		"body": [
+			"const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState($2);"
+		],
+		"description": "React useState hook"
+	}
+}
