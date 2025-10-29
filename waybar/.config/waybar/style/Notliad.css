@@ -3,13 +3,14 @@
 
 @import '../../.config/waybar/wallust/colors-waybar.css';
 
-@define-color backgroundlight #0D1B1E;
-@define-color backgrounddark #050A0C;
-@define-color workspacesbackground1 #0D1B1E;
-@define-color workspacesbackground2 #122C38;
-@define-color bordercolor #1DFDFF;
-@define-color textcolor1 #DFFBFF;
-@define-color textcolor2 #A4EFFF;
+@define-color backgroundlight #8A2BE2;
+@define-color backgrounddark #6C1ABA;
+@define-color background3 #2BE28A;
+@define-color workspacesbackground1 #F5D867;
+@define-color workspacesbackground2 #E2BE2B;
+@define-color bordercolor #2BE28A;
+@define-color textcolor1 #000;
+@define-color textcolor2 #fff;
 @define-color textcolor3 #6ED4E8;
 @define-color iconcolor #DFFBFF;
 
@@ -77,7 +78,7 @@ window#waybar {
 
 tooltip {
     border-radius: 16px;
-    background-color: @workspacesbackground1;
+    background-color: @backgrounddark;
     opacity:0.9;
     padding:20px;
     margin:0px;
@@ -233,12 +234,12 @@ window#waybar.empty #window {
 }
 
 #custom-power {
-    background-color: @backgrounddark;
-    color: @textcolor1;
+    background-color: @backgroundlight;
+    color: @textcolor2;
     border-radius: 5px;
-    padding: 0px 2px 1px 0px;
+    padding: 0px 2px 0px 0px;
     opacity:0.8;
-    border:3px solid @bordercolor;
+    border:3px solid @backgrounddark;
 }
 
 #custom-keybinds {
@@ -276,7 +277,7 @@ window#waybar.empty #window {
 }
 
 #clock {
-    background-color: @backgroundlight;
+    background-color: @background3;
     color: @textcolor1;
     border-radius: 3px 5px 3px 5px;
     padding: 1px 10px 0px 10px;

@@ -26,13 +26,13 @@
 	"custom/separator#blank",
 	"tray",
 	"custom/separator#blank",
-	"clock",
+	"hyprland/workspaces#rw",
 	"custom/separator#blank_2",
 	"hyprland/window",
 	],
 
 "modules-center": [
-	"hyprland/workspaces#rw",
+	"clock",
 	],
 
 "modules-right": [
