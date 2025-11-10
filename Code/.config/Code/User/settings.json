@@ -75,6 +75,8 @@
   },
   "editor.linkedEditing": true,
   "editor.cursorStyle": "line",
+  "custom-ui-style.extensions.enable": true,
+  "custom-ui-style.external.imports": ["file:///home/notliad/dotfiles/Code/.config/Code/User/customStyles/settings.css"],
   
   //WORKBENCH
   "workbench.editor.enablePreview": true,
