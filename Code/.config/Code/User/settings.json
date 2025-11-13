@@ -29,13 +29,14 @@
   "editor.fontSize": 14,
   "editor.lineHeight": 1.4,
   // "editor.lineHeight": 2,
-  "editor.cursorWidth": 3,
+  "editor.cursorWidth": 2,
   // "editor.fontFamily": "'SF Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   // "editor.fontFamily": "'Dank Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   // "editor.fontFamily": "'Space Mono', 'SF Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   // "editor.fontFamily": "'FiraCode Nerd Font Mono', 'SF Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   // "editor.fontFamily": "'Geist Mono', 'SF Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'SF Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  //"editor.fontFamily": "'CaskaydiaMono Nerd Font', 'SF Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   // "editor.fontFamily": "'DaddyTimeMono Nerd Font', 'SF Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   // "editor.fontFamily": "'Courier New'",
   // "editor.fontFamily": "'JetBrains Mono', 'SF Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
@@ -47,7 +48,7 @@
   // "editor.fontFamily": "'MonoLisa', 'JetBrains Mono', 'SF Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   // "editor.fontFamily": "'Anonymous Pro', 'JetBrains Mono', 'SF Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   // "editor.fontFamily": "'Fragment Mono', Menlo, Monaco, 'Courier New', monospace",
-  //"editor.fontWeight": "350",
+  "editor.fontWeight": "450",
   "editor.cursorBlinking": "solid",
   "editor.codeLensFontFamily": "'JetBrains Mono'",
   "editor.fontLigatures": true,
@@ -180,5 +181,6 @@
   "jestrunner.codeLensSelector": "**/*.{test,spec}.{js,ts,tsx,jsx}",
   "inlineChat.enableV2": true,
   "workbench.productIconTheme": "material-product-icons",
-  "chat.mcp.autostart": "newAndOutdated"
+  "chat.mcp.autostart": "newAndOutdated",
+  "editor.minimap.enabled": false
 }

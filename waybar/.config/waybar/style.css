@@ -72,6 +72,11 @@ tooltip {
   opacity: 0;
 }
 
+#custom-weather {
+  padding: 0 10px;
+  font-size: 13px;
+}
+
 #custom-screenrecording-indicator {
   min-width: 12px;
   margin-left: 8.75px;

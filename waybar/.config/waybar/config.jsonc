@@ -150,10 +150,10 @@
     "spacing": 17
   },
   "custom/weather": {
-    "format": "{}° ",
-    "tooltip": true,
+    "format": "{}",
+    "exec": "~/dotfiles/waybar/.config/waybar/modules/weather.sh",
     "interval": 1800,
-    "exec": "wttrbar --location Juazeiro",
+    "tooltip": true,
     "return-type": "json"
   }
 }
