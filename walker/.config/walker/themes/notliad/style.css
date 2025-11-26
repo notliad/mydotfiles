@@ -1,31 +1,31 @@
-@import "../../../../../../../.config/omarchy/current/theme/walker.css";
+@import "./constants.css";
 
 * {
-  all: unset;
+    all: unset;
 }
 
 * {
-  font-family: monospace;
-  font-size: 18px;
-  color: @text;
+    font-family: monospace;
+    font-size: 18px;
+    color: @text;
 }
 
 scrollbar {
-  opacity: 0;
+    opacity: 0;
 }
 
 .normal-icons {
-  -gtk-icon-size: 16px;
+    -gtk-icon-size: 16px;
 }
 
 .large-icons {
-  -gtk-icon-size: 32px;
+    -gtk-icon-size: 32px;
 }
 
 .box-wrapper {
-  background: alpha(@base, 0.95);
-  padding: 20px;
-  border: 2px solid @border;
+    background: alpha(@base, 0.95);
+    padding: 20px;
+    border: 2px solid @border;
 }
 
 .preview-box {
@@ -35,12 +35,12 @@ scrollbar {
 }
 
 .search-container {
-  background: @base;
-  padding: 10px;
+    background: @base;
+    padding: 10px;
 }
 
 .input placeholder {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .input {
@@ -48,8 +48,8 @@ scrollbar {
 
 .input:focus,
 .input:active {
-  box-shadow: none;
-  outline: none;
+    box-shadow: none;
+    outline: none;
 }
 
 .content-container {
@@ -72,48 +72,48 @@ child:hover .item-box {
 }
 
 child:selected .item-box {
-  border-radius: 6px;
-  background: @selected-background;
+    border-radius: 6px;
+    background: @selected-background;
 }
 
 child:selected .item-box * {
-  color: @selected-text;
+    color: @selected-text;
 }
 
 .item-box {
-  padding-left: 14px;
+    padding-left: 14px;
 }
 
 .item-text-box {
-  all: unset;
-  padding: 14px 0;
+    all: unset;
+    padding: 14px 0;
 }
 
 .item-text {
 }
 
 .item-subtext {
-  font-size: 0px;
-  min-height: 0px;
-  margin: 0px;
-  padding: 0px;
+    font-size: 0px;
+    min-height: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .item-image {
-  margin-right: 14px;
-  -gtk-icon-transform: scale(0.9);
+    margin-right: 14px;
+    -gtk-icon-transform: scale(0.9);
 }
 
 .current {
-  font-style: italic;
+    font-style: italic;
 }
 
 .keybind-hints {
-  background: @background;
-  padding: 10px;
-  margin-top: 10px;
+    background: @background;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .preview {
-  background: @background;
+    background: @background;
 }
