@@ -182,5 +182,8 @@
   "inlineChat.enableV2": true,
   "workbench.productIconTheme": "material-product-icons",
   "chat.mcp.autostart": "newAndOutdated",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "jestrunner.runOptions": [
+    "--runInBand"
+  ],
 }

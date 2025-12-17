@@ -154,7 +154,7 @@
   },
   "group/right-modules": {
     "orientation": "inherit",
-    "modules": ["group/tray-expander", "bluetooth", "network", "pulseaudio", "battery"]
+    "modules": ["tray", "bluetooth", "network", "pulseaudio", "battery"]
   },
   "custom/expand-icon": {
     "format": " ",
