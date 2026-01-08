@@ -1,117 +1,120 @@
 # 🛠️ Dotfiles - Omarchy
 
-Repositório de configurações pessoais para ambiente Linux (Arch Linux) com foco em produtividade e customização.
+This repository hosts the personal configuration files for my Linux environment (**Arch Linux**), aimed at productivity and customization.
 
-## 📋 Conteúdo
+## 🎯 Motivation
 
-Este repositório contém as configurações para:
+I created this repository to better organize and automate my **Omarchy** installation. Having a centralized and reproducible setup allows me to quickly get my development environment running on any machine, ensuring consistency across my Arch Linux setups.
 
-### 🔧 Aplicações
+## 📋 Contents
 
-- **Code** - Configurações do VS Code
-- **Fish Shell** - Shell interativo com configurações customizadas
-- **Hyprland** - Gerenciador de janelas tiling (compositor Wayland)
-- **Waybar** - Barra de tarefas/status para Wayland
-- **Pritunl** - Configurações de VPN
+This repository features configurations for:
 
-### 📦 Instalação
+### 🔧 Applications & Tools
 
-O repositório inclui um script de pós-instalação automatizado:
+- **Code** - VS Code settings and preferences.
+- **Fish Shell** - Interactive shell with custom configs.
+- **Hyprland** - Tiling window manager (Wayland compositor).
+- **Waybar** - Status/taskbar for Wayland (includes `wttrbar` for weather).
+- **Walker** - Modern application runner/launcher.
+
+### 📦 Installation
+
+The repository includes an automated post-installation script to speed up the setup process:
 
 ```bash
 sudo bash install.sh
 ```
 
-Este script realiza:
-- Atualização completa do sistema
-- Instalação do Node.js via NVM
-- Instalação de dependências
-- Configuração do ambiente
+This script performs the following actions:
+- Full system update (via `yay`).
+- **Node.js Environment Setup**: Installs `NVM`, `Node.js` (LTS), and `npm`.
+- **VS Code Installation**: Installs `visual-studio-code-bin`.
+- **Dotfiles Management**: Installs `GNU Stow` and symlinks configuration files automatically.
+- **Extras**: Installs `wttrbar` for weather widgets.
 
-> ⚠️ **Requisito**: Executar como root
+> ⚠️ **Requirement**: Must be run as root.
 
-## 🏗️ Estrutura do Projeto
+## 🏗️ Project Structure
 
 ```
 dotfiles/
-├── install.sh          # Script de pós-instalação
-├── Code/              # Configurações do VS Code
+├── install.sh          # Post-installation script
+├── Code/              # VS Code configurations
 │   └── .config/Code/
-├── fish/              # Configurações do Fish Shell
+├── fish/              # Fish Shell configurations
 │   └── .config/fish/
-├── hypr/              # Configurações do Hyprland
+├── hypr/              # Hyprland configurations
 │   └── .config/hypr/
-├── waybar/            # Configurações do Waybar
+├── waybar/            # Waybar configurations
 │   └── .config/waybar/
-├── pritunl/           # Configurações do Pritunl
-│   └── .config/pritunl/
-└── walker/            # Configurações do Walker
+└── walker/            # Walker configurations
     └── .config/walker/
 ```
 
-## 🚀 Uso
+## 🚀 Usage
 
-### Instalação Inicial
+### Initial Setup
 
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
 git clone https://github.com/notliad/dotfiles.git
 cd dotfiles
 ```
 
-2. Execute o script de instalação:
+2. Run the installation script:
 ```bash
 sudo bash install.sh
 ```
 
-### Sincronização de Configurações
+### Manual Configuration Sync
 
-Para copiar as configurações para seu sistema:
+If you prefer to sync configurations manually using `stow` or copying:
 
 ```bash
-# Copiar todas as configurações
-cp -r */. ~/.config/
+# Symlink specific packages
+stow Code waybar hypr fish walker pritunl
 ```
 
-## 🔨 Configurações Incluídas
+## 🔨 Features Details
 
 ### Hyprland
-Gerenciador de janelas moderno para Wayland com suporte a:
-- Workspaces dinâmicos
-- Bindings customizados
-- Temas personalizados
+Modern tiling window manager for Wayland featuring:
+- Dynamic workspaces.
+- Custom keybindings.
+- Personalized themes.
 
 ### Fish Shell
-Shell moderno com:
-- Autocompletar inteligente
-- Syntax highlighting
-- Aliases customizados
+Modern shell with:
+- Smart autocompletion.
+- Syntax highlighting.
+- Custom aliases.
 
 ### Waybar
-Barra de status com:
-- Monitores de CPU, RAM e disco
-- Controle de volume e brilho
-- Mostrador de data/hora
-- Integração com aplicações
+Status bar configured with:
+- CPU, RAM, and Disk monitors.
+- Volume and brightness controls.
+- Date/Time display.
+- Weather widget integration (`wttrbar`).
 
 ### VS Code
-Extensões e preferências para:
-- Desenvolvimento web e Node.js
-- Formatação automática
-- Temas customizados
+Editor setup including:
+- Web Development & Node.js environment.
+- Auto-formatting.
+- Custom themes.
 
-## 👤 Autor
+## 👤 Author
 
 **Dailton** - notliad
 
-## 📝 Licença
+## 📝 License
 
-Este projeto é fornecido como está. Sinta-se livre para adaptar e personalizar conforme necessário.
+This project is provided as-is. Feel free to adapt and customize it for your needs.
 
-## 🤝 Contribuições
+## 🤝 Contributions
 
-Sugestões e melhorias são bem-vindas! Abra uma issue ou pull request se tiver ideias para melhorar as configurações.
+Suggestions and improvements are welcome! Feel free to open an issue or pull request if you have ideas to enhance the configurations.
 
 ---
 
-**Última atualização**: Novembro de 2025
+**Last updated**: January 2026
