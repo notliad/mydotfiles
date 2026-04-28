@@ -1,115 +1,150 @@
-@define-color background #1D1D1D;
-@define-color foreground #fff;
+@define-color background #c7c7c7;
+@define-color foreground #000000;
 
 * {
-  color: @foreground;
-  min-height: 0;
-  font-family: 'Jetbrains Nerd Font', monospace;
-  font-weight: 600;
-  font-size: 13px;
+    color: @foreground;
+    min-height: 0;
+    font-family: "Jetbrains Nerd Font", monospace;
+    font-weight: 600;
+    font-size: 13px;
 }
 
 window#waybar {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 #workspaces button {
-  all: initial;
-  padding: 0 6px;
-  margin: 0 1.5px;
-  min-width: 9px;
+    all: initial;
+    padding: 0 6px;
+    margin: 0 1.5px;
+    min-width: 9px;
 }
 
 #workspaces button.empty {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 #battery,
 #pulseaudio,
 #custom-omarchy,
-#custom-screenrecording-indicator,
 #custom-update {
-  min-width: 12px;
-  margin: 0 7.5px;
+    min-width: 12px;
+    margin: 0 7.5px;
 }
 
 #tray {
-  margin-right: 16px;
-  margin-left: 5px;
+    margin-right: 16px;
+    margin-left: 5px;
 }
 
 #bluetooth {
-  margin-right: 17px;
+    margin-right: 17px;
 }
 
 #network {
-  margin-right: 13px;
+    margin-right: 13px;
 }
 
 #custom-expand-icon {
-  margin-right: 18px;
+    margin-right: 18px;
 }
 
 tooltip {
-  background-color: @background;
-  border-radius: 10px;
-  padding: 2px;
+    background-color: @background;
+    border-radius: 10px;
+    padding: 2px;
 }
 
 #custom-update {
-  font-size: 10px;
+    font-size: 10px;
 }
 
 #clock {
-  background-color: @background;
-  border-radius: 10px;
-  margin-top: 4px;
-  margin-right: 10px;
-  padding: 4px 8px;
+    background-color: @background;
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-right: 10px;
+    padding: 4px 8px;
 }
 
 .hidden {
-  opacity: 0;
+    opacity: 0;
 }
 
-#custom-screenrecording-indicator {
-  min-width: 12px;
-  margin-left: 8.75px;
-  font-size: 10px;
+#custom-screenrecording-indicator,
+#custom-idle-indicator,
+#custom-notification-silencing-indicator {
+    min-width: 12px;
+    margin-left: 5px;
+    margin-right: 0;
+    font-size: 10px;
+    padding-bottom: 1px;
 }
 
 #custom-screenrecording-indicator.active {
-  color: #a55555;
+    color: #a55555;
 }
-
+#custom-mpris{
+    background-color: @background;
+    border-radius: 10px;
+    padding: 4px 8px;
+    margin-top: 4px;
+    margin-left: 5px;
+}
 #left-modules {
-  background-color: @background;
-  border-radius: 10px;
-  padding: 4px 8px;
-  margin-top: 4px;
-  margin-left: 10px;
+    background-color: @background;
+    border-radius: 10px;
+    padding: 4px 8px;
+    margin-top: 4px;
+    margin-left: 10px;
 }
 
 #right-modules {
-  background-color: @background;
-  border-radius: 10px;
-  padding: 4px 8px;
-  margin-top: 4px;
-  margin-right: 10px;
+    background-color: @background;
+    border-radius: 10px;
+    padding: 4px 8px;
+    margin-top: 4px;
+    margin-right: 10px;
 }
 
 #perf-monitor {
-  background-color: @background;
-  border-radius: 10px;
-  padding: 4px 8px;
-  margin-top: 4px;
-  margin-right: 10px;
+    background-color: @background;
+    border-radius: 10px;
+    padding: 4px 8px;
+    margin-top: 4px;
+    margin-right: 10px;
 }
 
 #custom-weather {
-  background-color: @background;
-  border-radius: 10px;
-  padding: 4px 8px;
-  margin-top: 4px;
+    background-color: @background;
+    border-radius: 10px;
+    padding: 4px 8px;
+    margin-top: 4px;
 }
 
+#custom-voxtype {
+    min-width: 12px;
+    margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
+    color: #a55555;
+}
+
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active {
+    color: #a55555;
+}
+
+#custom-scratchpad {
+    background-color: @background;
+    border-radius: 10px;
+    padding: 0 11px 0 0;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+#custom-spacer {
+  margin-left: 25px;
+  margin-right: 10px;
+}

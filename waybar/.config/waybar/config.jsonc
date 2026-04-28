@@ -4,8 +4,15 @@
   "position": "top",
   "spacing": 0,
   "height": 26,
-  "modules-left": ["group/left-modules"],
-  "modules-center": ["group/clock-weather"],
+  "modules-left": [
+    "group/left-modules",
+    "custom/scratchpad",
+    "custom/mpris"
+  ],
+  "modules-center": [
+    "group/clock-weather",
+    "custom/spacer"
+  ],
   "modules-right": [
     "group/perf-monitor",
     "group/right-modules"
@@ -48,7 +55,6 @@
     "signal": 7,
     "interval": 21600
   },
-
   "cpu": {
     "interval": 10,
     "format": " {usage}% |",
@@ -63,14 +69,15 @@
       "mode-mon-col": 3,
       "on-scroll": 1,
       "format": {
-        "months": "<span color='#ffead3'><b>{}</b></span>",
-        "days": "<span color='#ecc6d9'><b>{}</b></span>",
-        "weeks": "<span color='#99ffdd'><b>W{:%V}</b></span>",
-        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><u>{}</u></span>"
+        "months": "<span color='#111827'><b>{}</b></span>",
+        "days": "<span color='#333'>{}</span>",
+        "weeks": "<span color='#000'><b>W{:%V}</b></span>",
+        "weekdays": "<span color='#2563eb'><b>{}</b></span>",
+        "today": "<span background='#2563eb' color='#fff'>{}</span>"
       }
     },
-    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
+    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select",
+    "on-click": "omarchy-launch-webapp https://calendar.google.com/calendar/u/0/r --profile-directory='Profile 1'"
   },
   "clock#2": {
     "format": " {:L%H:%M}",
@@ -78,7 +85,13 @@
     "tooltip-format": "<tt>UTC: {:L%Ez}</tt>"
   },
   "network": {
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
     "format": "{icon}",
     "format-wifi": "{icon}",
     "format-ethernet": "󰀂",
@@ -92,15 +105,37 @@
   },
   "battery": {
     "format": "{icon}",
-    "format-discharging": "{capacity}% {icon}",
-    "format-charging": "{capacity}% {icon}",
+    "format-discharging": "[{capacity}% {icon}]",
+    "format-charging": "[{capacity}% {icon}]",
     "format-plugged": "",
     "format-icons": {
-      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
-      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+      "charging": [
+        "󰢜",
+        "󰂆",
+        "󰂇",
+        "󰂈",
+        "󰢝",
+        "󰂉",
+        "󰢞",
+        "󰂊",
+        "󰂋",
+        "󰂅"
+      ],
+      "default": [
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹"
+      ]
     },
     "format-full": "󰂅",
-    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
+    "tooltip-format-discharging": "{time}",
     "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
     "interval": 5,
     "on-click": "omarchy-menu power",
@@ -114,7 +149,7 @@
     "format-disabled": "󰂲",
     "format-connected": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "blueberry"
+    "on-click": "omarchy-launch-bluetooth"
   },
   "pulseaudio": {
     "format": "{icon}",
@@ -124,7 +159,13 @@
     "scroll-step": 5,
     "format-muted": "",
     "format-icons": {
-      "default": ["", "", ""]
+      "headphone": "",
+      "headset": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
     }
   },
   "memory": {
@@ -138,23 +179,46 @@
       "transition-duration": 600,
       "children-class": "tray-group-item"
     },
-    "modules": ["custom/expand-icon", "tray"]
+    "modules": [
+      "custom/expand-icon",
+      "tray"
+    ]
   },
   "group/clock-weather": {
     "orientation": "inherit",
-    "modules": ["clock", "clock#2", "custom/weather", "custom/update", "custom/screenrecording-indicator"]
+    "modules": [
+      "clock",
+      "clock#2",
+      "custom/weather",
+      "custom/update",
+      "custom/voxtype",
+      "custom/screenrecording-indicator",
+      "custom/idle-indicator",
+      "custom/notification-silencing-indicator"
+    ]
   },
   "group/perf-monitor": {
     "orientation": "inherit",
-    "modules": ["cpu", "memory"]
+    "modules": [
+      "cpu",
+      "memory"
+    ]
   },
   "group/left-modules": {
     "orientation": "inherit",
-    "modules": ["hyprland/workspaces"]
+    "modules": [
+      "hyprland/workspaces"
+    ]
   },
   "group/right-modules": {
     "orientation": "inherit",
-    "modules": ["tray", "bluetooth", "network", "pulseaudio", "battery"]
+    "modules": [
+      "tray",
+      "bluetooth",
+      "network",
+      "pulseaudio",
+      "battery"
+    ]
   },
   "custom/expand-icon": {
     "format": " ",
@@ -164,6 +228,31 @@
     "on-click": "omarchy-cmd-screenrecord",
     "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
     "signal": 8,
+    "return-type": "json"
+  },
+  "custom/voxtype": {
+    "exec": "omarchy-voxtype-status",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": {
+      "idle": "",
+      "recording": "󰍬",
+      "transcribing": "󰔟"
+    },
+    "tooltip": true,
+    "on-click-right": "omarchy-voxtype-config",
+    "on-click": "omarchy-voxtype-model"
+  },
+  "custom/idle-indicator": {
+    "on-click": "omarchy-toggle-idle",
+    "exec": "$OMARCHY_PATH/default/waybar/indicators/idle.sh",
+    "signal": 9,
+    "return-type": "json"
+  },
+  "custom/notification-silencing-indicator": {
+    "on-click": "omarchy-toggle-notification-silencing",
+    "exec": "$OMARCHY_PATH/default/waybar/indicators/notification-silencing.sh",
+    "signal": 10,
     "return-type": "json"
   },
   "tray": {
@@ -176,5 +265,24 @@
     "interval": 1800,
     "tooltip": true,
     "return-type": "json"
+  },
+  "custom/scratchpad": {
+    "exec": "~/.config/waybar/modules/scratchpad.sh",
+    "interval": 2,
+    "format": "{}",
+    "return-type": "json",
+    "on-click": "hyprctl dispatch togglespecialworkspace scratchpad",
+    "tooltip": true
+  },
+  "custom/mpris": {
+    "exec": "playerctl metadata --format '{{status}} {{title}} - {{artist}}' | sed 's/Playing/▶/;s/Paused/⏸/' | cut -c1-35",
+    "interval": 1,
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
+  },
+  "custom/spacer": {
+    "format": " ",
+    "tooltip": false
   }
 }

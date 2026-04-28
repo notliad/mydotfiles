@@ -9,16 +9,12 @@
     "command": "-projectManager.listProjects"
   },
   {
-    "key": "ctrl+alt+q",
+    "key": "ctrl+alt+w",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
     "key": "ctrl+b",
     "command": "-workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "ctrl+alt+w",
-    "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
     "key": "ctrl+alt+b",

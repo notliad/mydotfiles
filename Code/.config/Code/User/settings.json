@@ -4,17 +4,16 @@
   "git-autoconfig.configList": [
     {
       "user.email": "dailton.rcf@gmail.com",
-      "user.name": "notliad"
-    }
+      "user.name": "notliad",
+    },
   ],
   "git.confirmSync": false,
   "editor.inlineSuggest.suppressSuggestions": true,
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    
   },
   // ---> Javascript && Typescript
   "javascript.inlayHints.parameterNames.enabled": "all",
@@ -72,13 +71,15 @@
   "editor.semanticHighlighting.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "editor.linkedEditing": true,
   "editor.cursorStyle": "line",
   "custom-ui-style.extensions.enable": true,
-  "custom-ui-style.external.imports": ["file:///home/notliad/dotfiles/Code/.config/Code/User/customStyles/settings.css"],
-  
+  "custom-ui-style.external.imports": [
+    "file:///home/notliad/dotfiles/Code/.config/Code/User/customStyles/settings.css",
+  ],
+
   //WORKBENCH
   "workbench.editor.enablePreview": true,
   "workbench.editor.highlightModifiedTabs": true,
@@ -99,7 +100,7 @@
   "workbench.editor.tabActionLocation": "left",
   "workbench.layoutControl.enabled": false,
   "workbench.editor.showTabs": "multiple",
-  "workbench.colorTheme": "Dark",
+  "workbench.colorTheme": "Default Dark+",
   "workbench.colorCustomizations": {
     "activityBarBadge.foreground": "#ffffffbf",
     "activityBarBadge.background": "#e64646",
@@ -146,7 +147,7 @@
     "titleBar.inactiveBackground": "#1E1F21",
     "quickInput.background": "#1E1F21",
     "input.background": "#3d3e42",
-    "button.background": "#3d3e42"
+    "button.background": "#3d3e42",
   },
 
   "security.workspace.trust.untrustedFiles": "open",
@@ -155,11 +156,11 @@
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/node_modules/*/**": true,
-    "**/target/**": true
+    "**/target/**": true,
   },
   "update.mode": "manual",
   "files.associations": {
-    ".env.json": "json"
+    ".env.json": "json",
   },
 
   "eslint.format.enable": true,
@@ -172,9 +173,7 @@
   "git.suggestSmartCommit": false,
 
   "terminal.integrated.env.linux": {},
-  "projectManager.any.baseFolders": [
-    "/home/dailton-filho/Projects"
-  ],
+  "projectManager.any.baseFolders": ["/home/dailton-filho/Projects"],
   "projectManager.git.maxDepthRecursion": 1,
   "projectManager.any.maxDepthRecursion": 1,
   "github.copilot.nextEditSuggestions.enabled": true,
@@ -183,7 +182,16 @@
   "workbench.productIconTheme": "material-product-icons",
   "chat.mcp.autostart": "newAndOutdated",
   "editor.minimap.enabled": false,
-  "jestrunner.runOptions": [
-    "--runInBand"
-  ],
+  "jestrunner.runOptions": ["--runInBand"],
+  "chat.tools.urls.autoApprove": {
+    "https://developers.google.com": {
+      "approveRequest": true,
+      "approveResponse": false,
+    },
+  },
+  "workbench.activityBar.location": "top",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "claudeCode.preferredLocation": "panel",
+  "chat.viewSessions.orientation": "stacked",
 }

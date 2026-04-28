@@ -21,7 +21,7 @@
 .box-wrapper {
     background: @base;
     padding: 0px; /* Removido padding externo para colar a barra de busca no topo */
-    border: 1px solid alpha(@border, 0.5); /* Borda mais fina e sutil */
+    border: 2px solid alpha(@border, 0.5); /* Borda mais fina e sutil */
     border-radius: 10px;
 }
 
