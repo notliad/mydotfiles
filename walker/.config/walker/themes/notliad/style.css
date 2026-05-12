@@ -28,8 +28,6 @@
 .search-container {
   background: transparent;
   padding: 18px 20px;
-  border-bottom: 1px solid alpha(@muted, 0.2); /* Linha divisória sutil */
-  margin-bottom: 8px;
 }
 
 .input {
@@ -45,8 +43,8 @@
 
 /* --- Lista de Itens --- */
 .list {
-  margin-top: 4px;
-  padding: 0 10px 10px 10px; /* Margem interna para a lista não colar nas bordas */
+  border-top: 1px solid alpha(@muted, 0.2); /* Linha divisória sutil */
+  padding: 12px 10px 10px 10px; /* Margem interna para a lista não colar nas bordas */
 }
 
 child {

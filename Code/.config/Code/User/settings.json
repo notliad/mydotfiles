@@ -100,7 +100,7 @@
   "workbench.editor.tabActionLocation": "left",
   "workbench.layoutControl.enabled": false,
   "workbench.editor.showTabs": "multiple",
-  "workbench.colorTheme": "",
+  "workbench.colorTheme": "Dark+",
   "workbench.colorCustomizations": {
     "activityBarBadge.foreground": "#ffffffbf",
     "activityBarBadge.background": "#e64646",
